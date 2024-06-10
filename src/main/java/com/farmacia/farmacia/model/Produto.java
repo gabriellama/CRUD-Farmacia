@@ -33,6 +33,7 @@ public class Produto {
 	@NotNull(message = "O atributo preço é obrigatório!")
 	private float preco;
 	
+	@Size(min = 4, max = 50, message = "O atributo de data de validade deve conter no minimo 4 e no máximo 50 caracteres")
 	private String datavalidade;
 	
 	@Size(max = 5000, message = "O atributo foto aceita até 5000 caracteres")
